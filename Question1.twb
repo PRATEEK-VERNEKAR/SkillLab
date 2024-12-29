@@ -1,0 +1,1469 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1213.2326                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1213.2326)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Question1_17354960747960' path='/workbooks' revision='1.0' />
+  <preferences />
+  <datasources>
+    <datasource caption='emp_data' inline='true' name='federated.04bbwcz1p4x8n11cta4bj1lfl6bv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='emp_data' name='textscan.1hn6kom1liu2xu164dtpe0eiuls7'>
+            <connection class='textscan' directory='Data/12621pl1plfhm61ehu4al14rwbpu' filename='emp_data.csv' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1hn6kom1liu2xu164dtpe0eiuls7' name='emp_data.csv' table='[emp_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='EmpID' ordinal='0' />
+            <column datatype='string' name='FirstName' ordinal='1' />
+            <column datatype='string' name='LastName' ordinal='2' />
+            <column datatype='date' name='StartDate' ordinal='3' />
+            <column datatype='date' name='ExitDate' ordinal='4' />
+            <column datatype='string' name='Title' ordinal='5' />
+            <column datatype='string' name='Supervisor' ordinal='6' />
+            <column datatype='string' name='BusinessUnit' ordinal='7' />
+            <column datatype='string' name='EmployeeStatus' ordinal='8' />
+            <column datatype='string' name='EmployeeType' ordinal='9' />
+            <column datatype='string' name='PayZone' ordinal='10' />
+            <column datatype='string' name='EmployeeClassificationType' ordinal='11' />
+            <column datatype='string' name='TerminationType' ordinal='12' />
+            <column datatype='string' name='DepartmentType' ordinal='13' />
+            <column datatype='string' name='Division' ordinal='14' />
+            <column datatype='date' name='DOB' ordinal='15' />
+            <column datatype='string' name='State' ordinal='16' />
+            <column datatype='string' name='JobFunctionDescription' ordinal='17' />
+            <column datatype='string' name='GenderCode' ordinal='18' />
+            <column datatype='integer' name='LocationCode' ordinal='19' />
+            <column datatype='string' name='RaceDesc' ordinal='20' />
+            <column datatype='string' name='MaritalDesc' ordinal='21' />
+            <column datatype='string' name='Performance Score' ordinal='22' />
+            <column datatype='integer' name='Current Employee Rating' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmpID]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>EmpID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FirstName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FirstName]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>FirstName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LastName]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>LastName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StartDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[StartDate]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>StartDate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExitDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ExitDate]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>ExitDate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supervisor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Supervisor]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>Supervisor</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BusinessUnit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BusinessUnit]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>BusinessUnit</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmployeeStatus]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>EmployeeStatus</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmployeeType]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>EmployeeType</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PayZone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PayZone]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>PayZone</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeClassificationType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmployeeClassificationType]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>EmployeeClassificationType</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TerminationType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TerminationType]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>TerminationType</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DepartmentType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DepartmentType]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>DepartmentType</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Division</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Division]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>Division</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOB</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DOB]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>DOB</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobFunctionDescription</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JobFunctionDescription]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>JobFunctionDescription</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GenderCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GenderCode]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>GenderCode</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LocationCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LocationCode]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>LocationCode</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RaceDesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RaceDesc]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>RaceDesc</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaritalDesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MaritalDesc]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>MaritalDesc</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Performance Score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Performance Score]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>Performance Score</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current Employee Rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Current Employee Rating]</local-name>
+            <parent-name>[emp_data.csv]</parent-name>
+            <remote-alias>Current Employee Rating</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Business Unit' datatype='string' name='[BusinessUnit]' role='dimension' type='nominal' />
+      <column caption='Calculation1' datatype='integer' name='[Calculation_1055561646919695]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;year&apos;, [StartDate], TODAY())' />
+      </column>
+      <column caption='Department Type' datatype='string' name='[DepartmentType]' role='dimension' type='nominal' />
+      <column caption='Emp ID' datatype='integer' name='[EmpID]' role='dimension' type='ordinal' />
+      <column caption='Employee Classification Type' datatype='string' name='[EmployeeClassificationType]' role='dimension' type='nominal' />
+      <column caption='Employee Status' datatype='string' name='[EmployeeStatus]' role='dimension' type='nominal' />
+      <column caption='Employee Type' datatype='string' name='[EmployeeType]' role='dimension' type='nominal' />
+      <column caption='Exit Date' datatype='date' name='[ExitDate]' role='dimension' type='ordinal' />
+      <column caption='First Name' datatype='string' name='[FirstName]' role='dimension' type='nominal' />
+      <column caption='Gender Code' datatype='string' name='[GenderCode]' role='dimension' type='nominal' />
+      <column caption='Job Function Description' datatype='string' name='[JobFunctionDescription]' role='dimension' type='nominal' />
+      <column caption='Last Name' datatype='string' name='[LastName]' role='dimension' type='nominal' />
+      <column caption='Location Code' datatype='integer' name='[LocationCode]' role='dimension' type='ordinal' />
+      <column caption='Marital Desc' datatype='string' name='[MaritalDesc]' role='dimension' type='nominal' />
+      <column caption='Pay Zone' datatype='string' name='[PayZone]' role='dimension' type='nominal' />
+      <column caption='Race Desc' datatype='string' name='[RaceDesc]' role='dimension' type='nominal' />
+      <column caption='Start Date' datatype='date' name='[StartDate]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Termination Type' datatype='string' name='[TerminationType]' role='dimension' type='nominal' />
+      <column caption='emp_data.csv' datatype='table' name='[__tableau_internal_object_id__].[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='emp_data.csv_E0694628C1DF4717993DBD628F715B7B' units='records'>
+        <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/federated_04bbwcz1p4x8n11cta4bj1.hyper' default-settings='yes' schema='Extract' tablename='Extract' update-time='12/29/2024 05:09:33 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='emp_data' increment-value='%null%' refresh-type='create' rows-inserted='552' timestamp-start='2024-12-29 17:09:33.575' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>EmpID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EmpID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmpID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>552</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FirstName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FirstName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FirstName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>474</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LastName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LastName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LastName</remote-alias>
+              <ordinal>2</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>452</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StartDate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[StartDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StartDate</remote-alias>
+              <ordinal>3</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>479</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ExitDate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[ExitDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ExitDate</remote-alias>
+              <ordinal>4</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>249</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>5</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supervisor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supervisor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supervisor</remote-alias>
+              <ordinal>6</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>551</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BusinessUnit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BusinessUnit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BusinessUnit</remote-alias>
+              <ordinal>7</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmployeeStatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmployeeStatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmployeeStatus</remote-alias>
+              <ordinal>8</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmployeeType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmployeeType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmployeeType</remote-alias>
+              <ordinal>9</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PayZone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PayZone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PayZone</remote-alias>
+              <ordinal>10</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmployeeClassificationType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmployeeClassificationType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmployeeClassificationType</remote-alias>
+              <ordinal>11</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TerminationType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TerminationType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TerminationType</remote-alias>
+              <ordinal>12</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DepartmentType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DepartmentType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DepartmentType</remote-alias>
+              <ordinal>13</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Division</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Division]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Division</remote-alias>
+              <ordinal>14</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DOB</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DOB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DOB</remote-alias>
+              <ordinal>15</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>544</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>16</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JobFunctionDescription</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[JobFunctionDescription]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JobFunctionDescription</remote-alias>
+              <ordinal>17</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GenderCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GenderCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GenderCode</remote-alias>
+              <ordinal>18</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LocationCode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LocationCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LocationCode</remote-alias>
+              <ordinal>19</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>540</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RaceDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RaceDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RaceDesc</remote-alias>
+              <ordinal>20</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MaritalDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MaritalDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MaritalDesc</remote-alias>
+              <ordinal>21</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Performance Score</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Performance Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Performance Score</remote-alias>
+              <ordinal>22</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Current Employee Rating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Current Employee Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Current Employee Rating</remote-alias>
+              <ordinal>23</ordinal>
+              <family>emp_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[emp_data.csv_E0694628C1DF4717993DBD628F715B7B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='emp_data.csv' id='emp_data.csv_E0694628C1DF4717993DBD628F715B7B'>
+            <properties context=''>
+              <relation connection='textscan.1hn6kom1liu2xu164dtpe0eiuls7' name='emp_data.csv' table='[emp_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='EmpID' ordinal='0' />
+                  <column datatype='string' name='FirstName' ordinal='1' />
+                  <column datatype='string' name='LastName' ordinal='2' />
+                  <column datatype='date' name='StartDate' ordinal='3' />
+                  <column datatype='date' name='ExitDate' ordinal='4' />
+                  <column datatype='string' name='Title' ordinal='5' />
+                  <column datatype='string' name='Supervisor' ordinal='6' />
+                  <column datatype='string' name='BusinessUnit' ordinal='7' />
+                  <column datatype='string' name='EmployeeStatus' ordinal='8' />
+                  <column datatype='string' name='EmployeeType' ordinal='9' />
+                  <column datatype='string' name='PayZone' ordinal='10' />
+                  <column datatype='string' name='EmployeeClassificationType' ordinal='11' />
+                  <column datatype='string' name='TerminationType' ordinal='12' />
+                  <column datatype='string' name='DepartmentType' ordinal='13' />
+                  <column datatype='string' name='Division' ordinal='14' />
+                  <column datatype='date' name='DOB' ordinal='15' />
+                  <column datatype='string' name='State' ordinal='16' />
+                  <column datatype='string' name='JobFunctionDescription' ordinal='17' />
+                  <column datatype='string' name='GenderCode' ordinal='18' />
+                  <column datatype='integer' name='LocationCode' ordinal='19' />
+                  <column datatype='string' name='RaceDesc' ordinal='20' />
+                  <column datatype='string' name='MaritalDesc' ordinal='21' />
+                  <column datatype='string' name='Performance Score' ordinal='22' />
+                  <column datatype='integer' name='Current Employee Rating' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <repository-location id='Sheet1' path='/workbooks/Question1_17354960747960' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='emp_data' name='federated.04bbwcz1p4x8n11cta4bj1lfl6bv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04bbwcz1p4x8n11cta4bj1lfl6bv'>
+            <column caption='Gender Code' datatype='string' name='[GenderCode]' role='dimension' type='nominal' />
+            <column-instance column='[GenderCode]' derivation='Count' name='[cnt:GenderCode:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GenderCode]' derivation='None' name='[none:GenderCode:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:GenderCode:nk]</rows>
+        <cols>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:GenderCode:qk]</cols>
+      </table>
+      <simple-id uuid='{1057F787-DAB7-4F9A-9C1D-87915FE8B84F}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <repository-location id='Sheet2' path='/workbooks/Question1_17354960747960' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='emp_data' name='federated.04bbwcz1p4x8n11cta4bj1lfl6bv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04bbwcz1p4x8n11cta4bj1lfl6bv'>
+            <column caption='Race Desc' datatype='string' name='[RaceDesc]' role='dimension' type='nominal' />
+            <column-instance column='[RaceDesc]' derivation='Count' name='[cnt:RaceDesc:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[RaceDesc]' derivation='None' name='[none:RaceDesc:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:RaceDesc:nk]' />
+              <text column='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:RaceDesc:nk]' />
+              <lod column='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:RaceDesc:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DCD183D2-F499-4882-AF7A-0F513AC15B6A}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <repository-location id='Sheet3' path='/workbooks/Question1_17354960747960' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='emp_data' name='federated.04bbwcz1p4x8n11cta4bj1lfl6bv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04bbwcz1p4x8n11cta4bj1lfl6bv'>
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column-instance column='[Title]' derivation='Count' name='[cnt:Title:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:Title:nk]</rows>
+        <cols>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:Title:qk]</cols>
+      </table>
+      <simple-id uuid='{12D2B5B8-AE41-4D6D-AAE5-893D9CD88465}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <repository-location id='Sheet4' path='/workbooks/Question1_17354960747960' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='emp_data' name='federated.04bbwcz1p4x8n11cta4bj1lfl6bv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04bbwcz1p4x8n11cta4bj1lfl6bv'>
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column-instance column='[Division]' derivation='Count' name='[cnt:Division:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:Division:qk]' />
+              <color column='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:Division:qk]' />
+              <text column='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:Division:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D4AC5A65-3548-4386-A235-8EBC87DF2FA8}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <repository-location id='Sheet5' path='/workbooks/Question1_17354960747960' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='emp_data' name='federated.04bbwcz1p4x8n11cta4bj1lfl6bv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04bbwcz1p4x8n11cta4bj1lfl6bv'>
+            <column caption='Start Date' datatype='date' name='[StartDate]' role='dimension' type='ordinal' />
+            <column-instance column='[StartDate]' derivation='Count' name='[cnt:StartDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[StartDate]' derivation='Year' name='[yr:StartDate:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:StartDate:qk]</rows>
+        <cols>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[yr:StartDate:ok]</cols>
+      </table>
+      <simple-id uuid='{A8EDDDEB-023F-40D4-938C-C1F9977D6D16}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <repository-location id='Sheet6' path='/workbooks/Question1_17354960747960' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='emp_data' name='federated.04bbwcz1p4x8n11cta4bj1lfl6bv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04bbwcz1p4x8n11cta4bj1lfl6bv'>
+            <column caption='Calculation1' datatype='integer' name='[Calculation_1055561646919695]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;year&apos;, [StartDate], TODAY())' />
+            </column>
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column caption='Start Date' datatype='date' name='[StartDate]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1055561646919695]' derivation='Avg' name='[avg:Calculation_1055561646919695:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[avg:Calculation_1055561646919695:qk]</rows>
+        <cols>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:Division:nk]</cols>
+      </table>
+      <simple-id uuid='{03C7F3AF-7070-4734-8AA5-A33B6F40343F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <repository-location id='Dashboard1' path='/workbooks/Question1_17354960747960' revision='' />
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='8' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='6' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='24500' id='3' name='Sheet 1' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24500' id='5' name='Sheet 2' w='41200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24500' id='10' name='Sheet 3' w='41200' x='800' y='25500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='11' name='Sheet 4' w='41200' x='42000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24500' id='14' name='Sheet 5' w='41200' x='800' y='74500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24500' id='15' name='Sheet 6' w='41200' x='42000' y='25500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='15875' id='9' name='Sheet 2' pane-specification-id='0' param='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:RaceDesc:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8500' id='12' name='Sheet 4' pane-specification-id='0' param='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:Division:qk]' type-v2='color' w='16000' x='83200' y='16875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='2750' id='13' name='Sheet 4' param='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:Division:qk]' type-v2='size' w='16000' x='83200' y='25375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='188' h='24500' id='3' is-fixed='true' name='Sheet 1' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24500' id='10' is-fixed='true' name='Sheet 3' w='41200' x='800' y='25500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24500' id='15' is-fixed='true' name='Sheet 6' w='41200' x='42000' y='25500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24500' id='5' is-fixed='true' name='Sheet 2' w='41200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15875' id='9' name='Sheet 2' pane-specification-id='0' param='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:RaceDesc:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='11' is-fixed='true' name='Sheet 4' w='41200' x='42000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8500' id='12' name='Sheet 4' pane-specification-id='0' param='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:Division:qk]' type-v2='color' w='16000' x='83200' y='16875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2750' id='13' name='Sheet 4' param='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:Division:qk]' type-v2='size' w='16000' x='83200' y='25375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24500' id='14' is-fixed='true' name='Sheet 5' w='41200' x='800' y='74500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{51A44888-ED38-4024-8CAC-70C65CA036E0}' />
+    </dashboard>
+  </dashboards>
+  <windows>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:GenderCode:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3460ADF4-8005-4F8D-A14A-4A82722A6AE4}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:RaceDesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:RaceDesc:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{96089929-D11A-4CF9-B84F-99ECC43E4250}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:Title:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0C400AFB-C460-4A1D-BC68-17A7B09F0B08}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:Division:qk]' type='color' />
+            <card param='[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[cnt:Division:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:Division:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{70C46D8B-9075-4BC6-8F49-3718407D7C33}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[yr:StartDate:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FA57F509-3FDD-4DBB-9A86-67814E8437D7}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:Division:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4D644B0F-940A-43D9-888B-37E23F771598}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.04bbwcz1p4x8n11cta4bj1lfl6bv].[none:RaceDesc:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{82A39185-0F9F-4CAE-9ADA-48B71C9C5476}' />
+    </window>
+  </windows>
+</workbook>
